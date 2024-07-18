@@ -1,0 +1,12 @@
+1. Navigate to the directory containing the Dockerfile and run the following command:
+
+docker build -t my-flask-app .
+
+2. Run the Docker Container:
+After the image is built, run a container using the following command:
+
+docker run -d -p 80:80 my-flask-app
+
+This command will run the Flask application in a Docker container and map port 80 of the container to port 80 of your host machine. You can then access the application in your browser at `http://localhost`.
+
+This simple Dockerfile sets up a basic Python Flask application, installs the necessary dependencies, and runs the application inside a Docker container.
